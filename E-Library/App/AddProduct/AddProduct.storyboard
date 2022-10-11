@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Add Product View Controller-->
+        <scene sceneID="iu4-Xg-b3b">
+            <objects>
+                <viewController storyboardIdentifier="AddProductViewController" id="2h5-pT-w5x" customClass="AddProductViewController" customModule="E_Library" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cFM-V0-9dM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xbC-eN-SSN">
+                                <rect key="frame" x="20" y="100" width="374" height="696"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="As7-JN-3H9">
+                                        <rect key="frame" x="324" y="15" width="35" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="35" id="EiD-F4-VED"/>
+                                            <constraint firstAttribute="height" constant="35" id="z6n-kw-fIa"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                        <state key="normal" title="X">
+                                            <color key="titleColor" red="0.035294117649999998" green="0.23921568630000001" blue="0.39607843139999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="xButtonPressed:" destination="2h5-pT-w5x" eventType="touchUpInside" id="820-wd-Fcn"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Product" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wE8-rv-1pf">
+                                        <rect key="frame" x="126.5" y="19.5" width="121.5" height="26.5"/>
+                                        <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="20"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U3C-u3-tjS">
+                                        <rect key="frame" x="40" y="619" width="294" height="47"/>
+                                        <color key="backgroundColor" red="0.035294117649999998" green="0.23921568630000001" blue="0.39607843139999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="47" id="YFN-aM-iqR"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="16"/>
+                                        <state key="normal" title="Add">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="12"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="addBookButtonPressed:" destination="2h5-pT-w5x" eventType="touchUpInside" id="IhY-3f-jKT"/>
+                                        </connections>
+                                    </button>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="emptyImg" translatesAutoresizingMaskIntoConstraints="NO" id="Kby-fr-CAa">
+                                        <rect key="frame" x="137" y="76" width="100" height="120"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="120" id="Eg8-4Q-dsP"/>
+                                            <constraint firstAttribute="width" constant="100" id="Tvu-xS-EuA"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="12"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="BHo-0t-qns">
+                                        <rect key="frame" x="20" y="226" width="334" height="109"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VhM-LF-bgK" customClass="TextField" customModule="E_Library" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="334" height="47"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="47" id="fx4-83-Aox"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="12"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" white="0.84999999999999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="12"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="E3x-WI-VTy">
+                                                <rect key="frame" x="0.0" y="62" width="334" height="47"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lXg-yr-wLx">
+                                                        <rect key="frame" x="0.0" y="0.0" width="162" height="47"/>
+                                                        <color key="backgroundColor" red="0.97647058819999999" green="0.5568627451" blue="0.3294117647" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="14"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="Exchange">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" red="0.97647058819999999" green="0.5568627451" blue="0.3294117647" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="1"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="12"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="exchangeButtonPressed:" destination="2h5-pT-w5x" eventType="touchUpInside" id="9k2-b6-EaZ"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YPS-L6-F5W">
+                                                        <rect key="frame" x="172" y="0.0" width="162" height="47"/>
+                                                        <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="14"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="Sell">
+                                                            <color key="titleColor" red="0.97647058819999999" green="0.5568627451" blue="0.3294117647" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" red="0.97647058819999999" green="0.5568627451" blue="0.3294117647" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="1"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="12"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="sellButtonPressed:" destination="2h5-pT-w5x" eventType="touchUpInside" id="o2J-pe-bLU"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="47" id="awS-GB-wd7"/>
+                                                </constraints>
+                                            </stackView>
+                                            <textField hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Price" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6B7-9v-OwV" customClass="TextField" customModule="E_Library" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="109" width="334" height="47"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="47" id="Nfp-lp-UCo"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="12"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" white="0.84999999999999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="12"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="TCH-nf-PrG">
+                                        <rect key="frame" x="20" y="350" width="334" height="219"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="12"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="12"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.84999999999999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IGo-pR-3TO">
+                                        <rect key="frame" x="212" y="171" width="35" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="QAt-Kc-Pi6"/>
+                                            <constraint firstAttribute="width" constant="35" id="s1c-LT-EZk"/>
+                                        </constraints>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="add"/>
+                                        <connections>
+                                            <action selector="addImageButtonPressed:" destination="2h5-pT-w5x" eventType="touchUpInside" id="gfF-eb-Ieb"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="IGo-pR-3TO" firstAttribute="bottom" secondItem="Kby-fr-CAa" secondAttribute="bottom" constant="10" id="3OY-I9-bOS"/>
+                                    <constraint firstAttribute="bottom" secondItem="U3C-u3-tjS" secondAttribute="bottom" constant="30" id="6ok-20-i5U"/>
+                                    <constraint firstItem="TCH-nf-PrG" firstAttribute="top" secondItem="BHo-0t-qns" secondAttribute="bottom" constant="15" id="Lr2-9a-RLA"/>
+                                    <constraint firstItem="Kby-fr-CAa" firstAttribute="top" secondItem="wE8-rv-1pf" secondAttribute="bottom" constant="30" id="Nj7-4L-f7N"/>
+                                    <constraint firstItem="BHo-0t-qns" firstAttribute="top" secondItem="IGo-pR-3TO" secondAttribute="bottom" constant="20" id="Ojy-0Y-hvS"/>
+                                    <constraint firstItem="wE8-rv-1pf" firstAttribute="centerX" secondItem="xbC-eN-SSN" secondAttribute="centerX" id="PaF-sc-CYv"/>
+                                    <constraint firstItem="BHo-0t-qns" firstAttribute="leading" secondItem="TCH-nf-PrG" secondAttribute="leading" id="R8g-iD-AHk"/>
+                                    <constraint firstItem="IGo-pR-3TO" firstAttribute="trailing" secondItem="Kby-fr-CAa" secondAttribute="trailing" constant="10" id="Tap-I1-WJV"/>
+                                    <constraint firstItem="Kby-fr-CAa" firstAttribute="centerX" secondItem="xbC-eN-SSN" secondAttribute="centerX" id="UpD-nC-GiU"/>
+                                    <constraint firstAttribute="trailing" secondItem="TCH-nf-PrG" secondAttribute="trailing" constant="20" symbolic="YES" id="Xwq-ta-DgI"/>
+                                    <constraint firstItem="BHo-0t-qns" firstAttribute="trailing" secondItem="TCH-nf-PrG" secondAttribute="trailing" id="Zkd-YZ-dDm"/>
+                                    <constraint firstAttribute="trailing" secondItem="U3C-u3-tjS" secondAttribute="trailing" constant="40" id="aD4-Mr-ugh"/>
+                                    <constraint firstItem="TCH-nf-PrG" firstAttribute="leading" secondItem="xbC-eN-SSN" secondAttribute="leading" constant="20" symbolic="YES" id="aVA-wF-ABz"/>
+                                    <constraint firstItem="As7-JN-3H9" firstAttribute="top" secondItem="xbC-eN-SSN" secondAttribute="top" constant="15" id="cUq-6k-WQN"/>
+                                    <constraint firstItem="wE8-rv-1pf" firstAttribute="centerY" secondItem="As7-JN-3H9" secondAttribute="centerY" id="cWe-pu-Xm8"/>
+                                    <constraint firstAttribute="trailing" secondItem="As7-JN-3H9" secondAttribute="trailing" constant="15" id="tFU-TM-grl"/>
+                                    <constraint firstItem="U3C-u3-tjS" firstAttribute="leading" secondItem="xbC-eN-SSN" secondAttribute="leading" constant="40" id="wMF-VJ-cEZ"/>
+                                    <constraint firstItem="U3C-u3-tjS" firstAttribute="top" secondItem="TCH-nf-PrG" secondAttribute="bottom" constant="50" id="xZV-ZU-lza"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="C6Y-yw-4uk"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="xbC-eN-SSN" firstAttribute="leading" secondItem="C6Y-yw-4uk" secondAttribute="leading" constant="20" id="CZ5-ZC-sGs"/>
+                            <constraint firstAttribute="bottom" secondItem="xbC-eN-SSN" secondAttribute="bottom" constant="100" id="Nbh-ia-e1y"/>
+                            <constraint firstItem="xbC-eN-SSN" firstAttribute="top" secondItem="cFM-V0-9dM" secondAttribute="top" constant="100" id="dDg-AI-c96"/>
+                            <constraint firstItem="C6Y-yw-4uk" firstAttribute="trailing" secondItem="xbC-eN-SSN" secondAttribute="trailing" constant="20" id="ye3-wn-waY"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="coverImageView" destination="Kby-fr-CAa" id="mgV-M0-5dY"/>
+                        <outlet property="descriptionTextView" destination="TCH-nf-PrG" id="Pbr-gZ-TLN"/>
+                        <outlet property="exchangeButton" destination="lXg-yr-wLx" id="eqz-VF-CG4"/>
+                        <outlet property="priceTextField" destination="6B7-9v-OwV" id="Cq8-j7-tX1"/>
+                        <outlet property="sellButton" destination="YPS-L6-F5W" id="wnj-Zw-54p"/>
+                        <outlet property="titleTextField" destination="VhM-LF-bgK" id="CKA-Sk-4lm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1wE-87-ex7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-175.36231884057972" y="80.357142857142847"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="add" width="76" height="76"/>
+        <image name="emptyImg" width="166" height="212"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,24 @@
+PODS:
+  - Cosmos (23.0.0)
+  - IQKeyboardManagerSwift (6.5.10)
+  - Kingfisher (7.3.2)
+
+DEPENDENCIES:
+  - Cosmos
+  - IQKeyboardManagerSwift
+  - Kingfisher
+
+SPEC REPOS:
+  trunk:
+    - Cosmos
+    - IQKeyboardManagerSwift
+    - Kingfisher
+
+SPEC CHECKSUMS:
+  Cosmos: b5c6a9a637e28a061b54c8f8b1d8529d7d4db73f
+  IQKeyboardManagerSwift: 52962c76ab33532f15ad9f3ff4e5715eda5335bb
+  Kingfisher: 0086ad83719761ba9b2cdaf6ef4d5b4878cbae23
+
+PODFILE CHECKSUM: 2ffc8bfe9519b8320a06adf871c3bfdbbfcda410
+
+COCOAPODS: 1.11.2

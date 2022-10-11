@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="TopBooksCell" customModule="E_Library" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="123" height="233"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="123" height="233"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shakespeare" translatesAutoresizingMaskIntoConstraints="NO" id="GpP-t0-fFi">
+                        <rect key="frame" x="8" y="8" width="107" height="120"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="120" id="D7u-KE-ZwR"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jiZ-Z4-RjR">
+                        <rect key="frame" x="8" y="136" width="107" height="89"/>
+                        <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="12"/>
+                        <color key="textColor" red="0.035294117649999998" green="0.23921568630000001" blue="0.39607843139999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="GpP-t0-fFi" secondAttribute="trailing" constant="8" id="00r-Dj-Wrc"/>
+                <constraint firstItem="GpP-t0-fFi" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="45L-6V-mjw"/>
+                <constraint firstAttribute="bottom" secondItem="jiZ-Z4-RjR" secondAttribute="bottom" constant="8" id="AnV-Uq-IvZ"/>
+                <constraint firstItem="jiZ-Z4-RjR" firstAttribute="leading" secondItem="GpP-t0-fFi" secondAttribute="leading" id="Bic-Q2-cIc"/>
+                <constraint firstItem="jiZ-Z4-RjR" firstAttribute="top" secondItem="GpP-t0-fFi" secondAttribute="bottom" constant="8" id="Ib4-sZ-Wbp"/>
+                <constraint firstItem="jiZ-Z4-RjR" firstAttribute="trailing" secondItem="GpP-t0-fFi" secondAttribute="trailing" id="aVF-as-8HE"/>
+                <constraint firstItem="GpP-t0-fFi" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="tty-mL-Z9R"/>
+            </constraints>
+            <size key="customSize" width="123" height="233"/>
+            <point key="canvasLocation" x="190.57971014492756" y="174.44196428571428"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="shakespeare" width="880" height="1360"/>
+    </resources>
+</document>
